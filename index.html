@@ -6,7 +6,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <title>Job Tracker || WebApp</title>
 </head>
 <body class="bg-[#F8FAFC]">
@@ -51,7 +53,7 @@
     <!-- main section -->
 
     <main class="container mx-auto">
-        <div class="main-heading flex justify-between">
+        <div class="main-heading flex justify-between mb-6">
             <h3 class="text-[20px] font-semibold text-[#002C5C]">
                 Available Jobs
             </h3>
@@ -59,6 +61,45 @@
                 8 Jobs
             </p>
         </div>
+        <div class="main-jobs-cards my-4">
+            <div class="main-menu-btn mb-4">
+                <button class="btn btn-sm hover:bg-primary hover:text-white">ALL</button>
+                <button class="btn btn-sm hover:bg-primary hover:text-white">Interview</button>
+                <button class="btn btn-sm hover:bg-primary hover:text-white">Rejected</button>
+            </div>
+            <div class="main-jobs-card flex justify-between items-start">
+                <div class="flex flex-col gap-5">
+                    <div>
+                        <h2 class="text-[#002C5C] text-[18px] leading-7 font-semibold">
+                            Mobile First Corp
+                        </h2>
+                        <p class="text-[#64748B] leading-5">
+                            React Native Developer
+                        </p>
+                    </div>
+                    <div class="text-[#64748B]">
+                        <ul class="flex gap-8">
+                            <li>Remote</li>
+                            <li class="list-disc">Full Time</li>
+                            <li class="list-disc">$130,000 - $175,000</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <div class="bg-[#aaa]/40 text-[#002C5C] w-30 text-center py-2 text-[14px] font-medium">NOT APPLIED</div>
+                        <p class="text-[#323B49]">
+                            Build cross-platform mobile applications using React Native. Work On products used by millions of users worldwide. 
+                        </p>
+                    </div>
+                    <div>
+                        <a href="#" class="btn btn-outline btn-accent">Interview</a>
+                        <a href="#" class="btn btn-outline btn-error">Rejected</a>
+                    </div>
+                </div>
+                <div class="w-12 h-12 bg-[#333]/20 flex items-center justify-center rounded-full cursor-pointer"><i class="fa-solid fa-trash-can"></i></div>
+            </div>
+        </div>
     </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </body>
 </html>
