@@ -62,7 +62,7 @@ class JobTracker {
         if (!job) return;
 
         job.type = 'accepted';
-        this.updateJobCard(id, 'INTERVIEW', '#10B981');
+        this.updateJobCard(id, 'Accepted', '#10B981');
         this.updateStats();
     }
 
@@ -72,7 +72,7 @@ class JobTracker {
         if (!job) return;
 
         job.type = 'declined';
-        this.updateJobCard(id, 'REJECTED', '#EF4444');
+        this.updateJobCard(id, 'Decline', '#EF4444');
         this.updateStats();
     }
 
